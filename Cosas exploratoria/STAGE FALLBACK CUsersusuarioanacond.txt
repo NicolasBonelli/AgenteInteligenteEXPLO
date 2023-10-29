@@ -1,2 +1,0 @@
-STAGE FALLBACK: C:\Users\usuario\anaconda3\envs\install_demo\Lib\site-packages\rasa\core\actions
-PYTHON INIT: C:\Users\usuario\anaconda3\envs\install_demo\Lib\site-packages\rasa\core\actions
