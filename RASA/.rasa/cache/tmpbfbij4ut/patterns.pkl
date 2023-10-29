@@ -1,0 +1,22 @@
+[
+  {
+    "name": "precio",
+    "pattern": "\\d{1,2}"
+  },
+  {
+    "name": "rating",
+    "pattern": "[0-9]+(?:[.,][0-9]+)?"
+  },
+  {
+    "name": "nombreUser",
+    "pattern": "(\\bNicolas\\b|\\bSantiago\\b|\\bTomas\\b|\\bOmar\\b|\\bPaqui\\b|\\bHector\\b|\\bAgustina\\b|\\bAgustin\\b|\\bMelani\\b|\\bGuillermo\\b|\\bLucia\\b|\\bNahuel\\b|\\bBraian\\b|\\bGonzalo\\b|\\bJuan\\b|\\bBautista\\b|\\bJose\\b|\\bAlberto\\b|\\bOlguita\\b|\\bMabel\\b|\\bBlanca\\b|\\bMiguel\\b|\\bDylan\\b|\\bLaura\\b|\\bMartina\\b|\\bCamila\\b|\\bGiorgio\\b|\\bLautaro\\b|\\bFrancisco\\b|\\bJulian\\b|\\bMicaela\\b|\\bHilario\\b|\\bIara\\b|\\bAngel\\b|\\bAlberto\\b|\\bOlguita\\b|\\bAyrton\\b|\\bLucas\\b|\\bPepe\\b|\\bCarla\\b|\\bFacundo\\b|\\bLuis\\b|\\bRoberto\\b|\\bJesus\\b|\\bPablo\\b|\\bMaria\\b|\\bMarta\\b|\\bPalermo\\b|\\bPatricia\\b|\\bHernan\\b|\\bSofia\\b|\\bGuadalupe\\b|\\bLuciano\\b|\\bVictoria\\b|\\bRenata\\b)"
+  },
+  {
+    "name": "genero",
+    "pattern": "(\\baccion\\b|\\baventura\\b|\\bvehiculos\\b|\\bdeportes\\b|\\bmmo\\b|\\brpg\\b|\\bsandbox\\b|\\bindie\\b|\\bshooter\\b)"
+  },
+  {
+    "name": "juego",
+    "pattern": "(\\bthe\\ witcher\\ 3\\b|\\bminecraft\\b|\\bgta\\ v\\b|\\boverwatch\\b|\\bzelda\\ botw\\b|\\bvalorant\\b|\\bpubg\\b|\\bgenshin_impact\\b|\\bworld\\ of\\ warships\\b|\\bworld\\ of\\ tanks\\b|\\bsmite\\b|\\blol\\b|\\bskyrim\\b|\\bthe\\ elder\\ scrolls\\b|\\bassasin\\ creed\\b|\\bpayday\\ 2\\b|\\bpayday\\ 3\\b|\\bno\\ man\\ sky\\b|\\bcs\\ go\\b|\\brocket\\ league\\b|\\binsurgency\\ sandstorm\\b|\\bready\\ or\\ not\\b|\\bteam\\ fortress\\ 2\\b|\\brainbow\\ six\\ siege\\b|\\bleft\\ 4\\ dead\\ 2\\b|\\bmortal\\ kombat\\ 11\\b|\\bproject\\ zomboid\\b|\\bspec\\ ops\\ the\\ line\\b|\\blimbo\\b|\\bwar\\ thunder\\b|\\bcup\\ head\\b|\\bhollow\\ knight\\b|\\bunturned\\b|\\bsniper\\ elite\\ 4\\b|\\bace\\ combat\\ 7\\b|\\bproject\\ wingman\\b|\\bred\\ dead\\ redemption\\ 2\\b|\\bmetal\\ gear\\ rising\\b|\\bbattlefield\\ 4\\b|\\bdying\\ light\\b)"
+  }
+]

@@ -1,0 +1,95 @@
+version: "3.1"
+
+stories:
+- story: Asks for the best games of a specific genre 
+  steps:
+  - intent: ask_game_category_rating_best
+  - action: utter_affirmBot
+  - action: action_dar_mejores_juegos_cat
+- story: Asks for the worst games of a specific genre 
+  steps:
+  - intent: ask_game_category_rating_worst
+  - action: utter_affirmBot
+  - action: action_dar_peores_juegos_cat  
+- story: Asks for games of a specific genre 
+  steps:
+  - intent: ask_game_category
+  - action: utter_affirmBot
+  - action: action_dar_juegos_cat
+- story: Asks for games with a value less than desired
+  steps:
+  - intent: game_price_less
+  - action: utter_affirmBot
+  - action: action_dar_juegos_menor_a_precio
+- story: Asks for games with a value more than desired
+  steps:
+  - intent: game_price_more
+  - action: utter_affirmBot
+  - action: action_dar_juegos_mayor_a_precio
+- story: Asks for games with a desired value
+  steps:
+  - intent: game_price
+  - action: utter_affirmBot
+  - action: action_dar_juegos_a_precio 
+- story: Asks for free games
+  steps:
+  - intent: game_price_free
+  - action: utter_affirmBot
+  - action: action_dar_juegos_gratis
+- story: Asks for games which ratings are better than specified
+  steps:
+  - intent: ask_games_rating_more
+  - action: utter_affirmBot
+  - action: action_dar_juegos_mayor_rating
+- story: Asks for games which ratings are worse than specified
+  steps:
+  - intent: ask_games_rating_less
+  - action: utter_affirmBot
+  - action: action_dar_juegos_menor_rating
+- story: Asks for games with a specific rating
+  steps:
+  - intent: ask_games_rating
+  - action: utter_affirmBot
+  - action: action_dar_juegos_rating
+- story: Asks for info of a specific game 
+  steps:
+  - intent: ask_info_game
+  - action: utter_affirmBot
+  - action: utter_ask_for_game
+  - intent: give_game
+  - action: action_dar_info_juego
+  #- checkpoint: info_checkpoint
+  
+- story: Asks for more information about a specific game
+  steps:
+  #- checkpoint: info_checkpoint
+  - intent: ask_info_game
+  - action: utter_affirmBot
+  - action: utter_ask_for_game
+  - intent: give_game
+  - action: action_dar_info_juego
+  - intent: ask_more_info_game
+  - action: utter_affirmBot
+  - action: action_dar_link_juego  
+  
+- story: The user disliked a game
+  steps:
+  - intent: not_liked_game
+  - action: action_save_game_disliked
+- story: The user liked a game
+  steps:
+  - intent: liked_game
+  - action: action_save_game_liked
+- story: The user ask for a recommendation
+  steps:
+  - intent: ask_recommendation
+  - action: action_recommend_game
+- story: The user does not feel good
+  steps:
+  - intent: feel_bad
+  - action: action_recommend_game_nc
+- story: The user feels good
+  steps:
+  - intent: feel_good
+  - action: action_give_link_liked
+  

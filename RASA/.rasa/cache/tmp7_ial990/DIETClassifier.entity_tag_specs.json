@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-genero",
+      "2": "I-genero",
+      "3": "L-genero",
+      "4": "U-genero",
+      "5": "B-juego",
+      "6": "I-juego",
+      "7": "L-juego",
+      "8": "U-juego",
+      "9": "B-nombreUser",
+      "10": "I-nombreUser",
+      "11": "L-nombreUser",
+      "12": "U-nombreUser",
+      "13": "B-precio",
+      "14": "I-precio",
+      "15": "L-precio",
+      "16": "U-precio",
+      "17": "B-rating",
+      "18": "I-rating",
+      "19": "L-rating",
+      "20": "U-rating",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-genero": 1,
+      "I-genero": 2,
+      "L-genero": 3,
+      "U-genero": 4,
+      "B-juego": 5,
+      "I-juego": 6,
+      "L-juego": 7,
+      "U-juego": 8,
+      "B-nombreUser": 9,
+      "I-nombreUser": 10,
+      "L-nombreUser": 11,
+      "U-nombreUser": 12,
+      "B-precio": 13,
+      "I-precio": 14,
+      "L-precio": 15,
+      "U-precio": 16,
+      "B-rating": 17,
+      "I-rating": 18,
+      "L-rating": 19,
+      "U-rating": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

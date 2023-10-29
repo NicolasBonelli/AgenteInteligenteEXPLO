@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.rasa",
+    "\\actions",
+    "\\data",
+    "\\models",
+    "\\tests"
+  ],
+  "SelectedNode": "\\actions\\actions.py",
+  "PreviewInSolutionExplorer": false
+}

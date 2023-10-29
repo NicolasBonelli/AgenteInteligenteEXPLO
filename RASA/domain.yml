@@ -1,0 +1,123 @@
+version: "3.1"
+
+entities:
+  - genero
+  - precio
+  - juego
+  - nombreUser
+  - rating 
+
+slots:
+  juegoSolicitado:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: juego    
+  generoUsar:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: genero
+  JuegosGusta:
+    type: list
+    influence_conversation: false
+    mappings:
+      - type: custom
+        entity: juego
+  nombreGuardado:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: nombreUser   
+ 
+intents:
+  - say_hello    
+  - greet
+  - goodbye
+  - thanking
+  - affirm
+  - reject
+  - feel_good
+  - feel_bad
+  - bot_challenge
+  - ask_game_category
+  - ask_game_category_rating_best
+  - ask_game_category_rating_worst
+  - like_genre
+  - like_game
+  - game_price
+  - game_price_more
+  - game_price_less
+  - game_price_free
+  - ask_games_rating_more
+  - ask_games_rating_less
+  - ask_games_rating
+  - ask_info_game
+  - ask_more_info_game
+  - give_game
+  - liked_game
+  - not_liked_game
+  - ask_recommendation
+  
+
+checkpoints:
+  - info_checkpoint    
+actions:
+  - action_bot_say_hello
+  - action_bot_say_goodbye
+  - action_bot_say_your_welcome
+  - action_dar_juegos_rating
+  - action_dar_juegos_mayor_rating
+  - action_dar_juegos_menor_rating
+  - action_dar_juegos_cat
+  - action_dar_mejores_juegos_cat
+  - action_dar_peores_juegos_cat
+  - action_dar_juegos_menor_a_precio
+  - action_dar_juegos_mayor_a_precio
+  - action_dar_juegos_a_precio
+  - action_dar_juegos_gratis
+  - action_dar_info_juego
+  - action_dar_link_juego
+  - action_save_game_liked
+  - action_save_game_disliked
+  - action_recommend_game
+  - action_recommend_game_nc
+  - action_give_link_liked
+   
+
+responses:
+  utter_greet:
+    - text: "Hey! Como estas?"
+    - text: "Buenas como estas?"
+    - text: "Que tal?"
+    - text: "Hola!"
+  utter_affirmBot:
+    - text: "Si como no."
+    - text: "Por supuesto."
+    - text: "Perfecto."
+    - text: "Como desees" 
+  utter_ask_for_game:
+    - text: "Me darias el nombre del juego?"
+    - text: "Cual es es el juego que desea ver informacion?"
+    - text: "De cual juego estas hablando?"
+    - text: "Me darias el nombre del juego?"  
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

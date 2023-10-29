@@ -1,0 +1,11 @@
+categoria,precio,rating,conexion,productora,gusto
+shooter,0,9.6,1,valve,1
+shooter,30,8.2,1,ubisoft,1
+shooter,30,8.5,1,bohemia interactive,1
+shooter,10,7.5,1,overkill,1
+shooter,50,9.0,1,overkill,1
+shooter,0,0.9,1,blizzard,1
+mmo,0,4.0,1,riot,0
+aventura,15,8.8,1,techland,0
+mmo,0,7.0,1,hi rez,0
+deportes,60,7.0,1,ea,0
